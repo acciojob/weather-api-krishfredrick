@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 const fetchingWeather = async()=>{
-	const response = await fetch(`https://openweathermap.org/api`);
+	const response = await fetch(`https://openweathermap.org/api/london`);
 	return response.json();
 }
 
