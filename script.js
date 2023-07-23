@@ -5,10 +5,10 @@ const fetchingWeather = async()=>{
 	return response.json();
 }
 
-const handleWeather = ()=>{
+const handleWeather = async()=>{
 	let data;
 	try {
-		data = fetchingWeather();
+		data = await fetchingWeather();
 		let div = document.createElement('div');
 		document.body.appendChild(div);
 		div.innerText = data;
